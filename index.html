@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-image: url("./background.png");
+      background-repeat:no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    html, body {
+      height: auto;
+    }
+
+    h1, h2 {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+      font-size: 90px;
+    }
+
+    .appstore-image {
+      width: 150px;
+      height: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .app-image {
+      height: 80vh;
+      width: auto;
+      margin: 0;
+    }
+    
+    .app-image-wrapper {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .app-description-wrapper {
+      text-align: center;
+    }
+
+    .app-title-logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .app-title-logo * {
+      display: inline-block;
+    }
+
+    .logo-image {
+      height: 130px;
+      width: auto;
+      vertical-align:middle
+    }
+    
+    @media screen and (max-width: 767px) {
+      h1 {
+        font-size: 15vw;
+      }
+
+      .logo-image {
+        width: 15vw;
+        height: auto;
+      }
+
+      .app-description-wrapper {
+        margin-top: 30px;
+      }
+    }
+
+    @media screen and (max-width: 992px) and (min-width: 767px) {
+      h1 {
+        font-size: 10vw;
+      }
+
+      .logo-image {
+        width: 10vw;
+        height: auto;
+      }
+
+      .app-description-wrapper {
+        margin-top: 30px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .app-description-wrapper {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%)
+      }
+
+      .col-full {
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-7 col-full">
+        <div class="app-description-wrapper">
+          <div class="app-title-logo">
+            <img class="logo-image" src="./logo.svg" />
+            <h1 style="margin-top: 15px">
+              Flashback
+            </h1>
+          </div>
+          <h2>All your photos instantly linked to your life</h2>
+          <img class="appstore-image" src="./appstore.png" />
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <div class="app-image-wrapper">
+          <img class="app-image" src="./app.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
