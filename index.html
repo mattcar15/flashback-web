@@ -54,8 +54,7 @@
     }
 
     .app-title-logo {
-      display: flex;
-      justify-content: center;
+      display: block;
     }
 
     .app-title-logo * {
@@ -66,6 +65,11 @@
       height: 130px;
       width: auto;
       vertical-align:middle
+    }
+
+    .app-title {
+      margin: 0;
+      vertical-align: middle;
     }
     
     @media screen and (max-width: 767px) {
@@ -119,7 +123,7 @@
         <div class="app-description-wrapper">
           <div class="app-title-logo">
             <img class="logo-image" src="./logo.svg" />
-            <h1 style="margin-top: 15px">
+            <h1 class="app-title">
               Flashback
             </h1>
           </div>
